@@ -1,4 +1,3 @@
-#main
 from tkinter import *
 from tkinter import messagebox
 import random
@@ -42,9 +41,10 @@ def rollDice():
         label.image = die
         counter+=5
 
+#main
 canvas = Canvas(width = 225, height = 90) 
 canvas.pack(expand = YES, fill = BOTH) 
-# dice = rollDice(canvas)
+
 B = Button(text = "Roll Dice", command = rollDice)
 B.place(x = 75,y = 10)
 mainloop()
